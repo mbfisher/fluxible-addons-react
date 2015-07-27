@@ -138,12 +138,13 @@ function createComponent(Component, stores, getStateFromStores, customContextTyp
  * @returns {React.Component} or {Function} if using decorator pattern
  */
 module.exports = function connectToStores(Component, stores, getStateFromStores) {
+
     // support decorator pattern
     if (arguments.length === 2) {
-        stores = arguments[0];
-        getStateFromStores = arguments[1];
+        var _stores = Component;
+        var _getStateFromStores = stores;
         return function connectToStoresDecorator(ComponentToDecorate) {
-            return createComponent(ComponentToDecorate, stores, getStateFromStores);
+            return createComponent(ComponentToDecorate, _stores, _getStateFromStores);
         };
     }
 
