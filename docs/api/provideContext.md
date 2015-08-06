@@ -1,4 +1,4 @@
-# `provideContext(Component, customContextTypes)`
+# provideContext
 
 ```js
 import provideContext from 'fluxible-addons-react/provideContext';
