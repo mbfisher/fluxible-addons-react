@@ -11,7 +11,7 @@ Takes the following parameters:
  * `Component` - the component that should receive the state as props, optional if using decorator pattern
  * `stores` - array of store constructors to listen for changes
  * `getStateFromStores` - function that receives all stores and should return the full state object. Receives `stores` hash and component `props` as arguments
- * `customContextTypes` (*optional*) - additional `contextTypes` that could be access from your `getStateFromStores` function
+ * `customContextTypes` (*optional*) - additional `contextTypes` that could be accessed from your `getStateFromStores` function
 
 ## Example
 
