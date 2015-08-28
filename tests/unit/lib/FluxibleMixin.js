@@ -184,7 +184,7 @@ describe('StoreListenerMixin', function () {
 
             expect(function () {
                 ReactTestUtils.renderIntoDocument(<Component />);
-            }).to.throw();
+            }).to['throw']();
         });
         it('should call context executeAction when context provided', function (done) {
             var Component = React.createClass({
