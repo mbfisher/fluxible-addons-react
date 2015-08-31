@@ -5,6 +5,7 @@
 'use strict';
 
 module.exports = {
+    batchedUpdatePlugin: require('./batchedUpdatePlugin'),
     connectToStores: require('./connectToStores'),
     createElementWithContext: require('./createElementWithContext'),
     FluxibleComponent: require('./FluxibleComponent'),
