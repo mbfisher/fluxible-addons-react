@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.1.8
+
+### Bug Fixes
+
+ * Expose batchUpdatePlugin from default exports
+
 ## 0.1.7
 
 ### Features
