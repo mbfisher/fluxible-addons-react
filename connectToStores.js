@@ -93,7 +93,7 @@ function createComponent(Component, stores, getStateFromStores, customContextTyp
             }
         },
         render: function render() {
-            return React.createElement(Component, objectAssign({}, this.props, this.state));
+            return React.createElement(Component, objectAssign({}, this.props, this.state, {ref: 'wrappedElement'}));
         }
     });
 

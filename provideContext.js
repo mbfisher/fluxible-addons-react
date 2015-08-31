@@ -37,7 +37,7 @@ function createComponent(Component, customContextTypes) {
         },
 
         render: function () {
-            return React.createElement(Component, this.props);
+            return React.createElement(Component, objectAssign({}, this.props, { ref: 'wrappedElement' }));
         }
     });
 
