@@ -1,5 +1,17 @@
 # Change Log
 
+## 0.1.7
+
+### Features
+
+ * [#21] Add batch update plugin that will batch all setState calls within the same dispatch
+
+### Internal
+
+ * [#22] Updated object-assign dependency
+ * [#23] Updated dev dependencies
+ 
+
 ## 0.1.6
 
 ### Bug Fixes
