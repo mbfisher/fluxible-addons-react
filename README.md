@@ -23,6 +23,7 @@ Join the #fluxible channel of the [Reactiflux](http://reactiflux.com) Slack comm
  * [FluxibleMixin](https://github.com/yahoo/fluxible-addons-react/blob/master/docs/api/FluxibleMixin.md) (legacy)
  * [provideContext](https://github.com/yahoo/fluxible-addons-react/blob/master/docs/api/provideContext.md)
  * [createElementWithContext](https://github.com/yahoo/fluxible-addons-react/blob/master/docs/api/createElementWithContext.md)
+ * [batchedUpdatePlugin](https://github.com/yahoo/fluxible-addons-react/blob/master/docs/api/batchedUpdatePlugin.md)
 
 ## License
 
