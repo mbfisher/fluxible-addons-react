@@ -9,13 +9,14 @@ var objectAssign = require('object-assign');
 var hoistNonReactStatics = require('hoist-non-react-statics');
 
 function createComponent(Component, customContextTypes) {
+    var componentName = Component.displayName || Component.name;
     var childContextTypes = objectAssign({
         executeAction: React.PropTypes.func.isRequired,
         getStore: React.PropTypes.func.isRequired
     }, customContextTypes || {});
 
     var ContextProvider = React.createClass({
-        displayName: 'ContextProvider',
+        displayName: componentName + 'ContextProvider',
 
         propTypes: {
             context: React.PropTypes.object.isRequired

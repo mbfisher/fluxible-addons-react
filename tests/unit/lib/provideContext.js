@@ -6,6 +6,29 @@ var React = require('react');
 var provideContext = require('../../..').provideContext;
 
 describe('provideContext', function () {
+    it('should use the childs name', function () {
+        var Component = React.createClass({
+            render: function () {
+                return null;
+            }
+        });
+
+        var WrappedComponent = provideContext(Component);
+        expect(WrappedComponent.displayName).to.equal('ComponentContextProvider');
+    });
+
+    it('should use the childs displayName', function () {
+        var Component = React.createClass({
+            displayName: 'TestComponent',
+            render: function () {
+                return null;
+            }
+        });
+
+        var WrappedComponent = provideContext(Component);
+        expect(WrappedComponent.displayName).to.equal('TestComponentContextProvider');
+    });
+
     it('should provide the context with custom types to children', function () {
         var context = {
             foo: 'bar',
